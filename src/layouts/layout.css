@@ -5,26 +5,24 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
-    color:rgba(255, 245, 235, 1); ;
+    color: rgba(16, 17, 13, 1)
 }
-h1 {
-    color: rgba(16, 17, 13, 1);
+h1, h3 {
     font-family: 'Archivo';
 }
 h2 {
     color: rgba(39, 57, 170, 1);
 }
-h3 {
-    color: rgba(252, 77, 92, 1);
-}
+
 h4 {
     color: rgba(16, 17, 13, 1);
 }
 h5 {
+    color: rgba(252, 77, 92, 1);
     color: rgba(255, 245, 235, 1);
     color: rgba(209, 236, 239, 1);
+    color:rgba(16, 17, 13, 1); 
 }
 p {
-    color:rgba(16, 17, 13, 1); ;
-    font-family: ¨'Archivo';
+    font-family: 'Archivo';
 }
