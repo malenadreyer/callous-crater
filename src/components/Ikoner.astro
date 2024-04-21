@@ -1,0 +1,119 @@
+
+<div class="ikon_container">
+    <img class="ikon" src="/pics/red_star.svg" alt="">
+</div>
+
+<div class="ikon_container1">
+    <img class="ikon1" src="/pics/blue_star.svg" alt="">
+</div>
+<div class="ikon_container2">
+    <img class="ikon2" src="/pics/black_star.svg" alt="">
+</div>
+
+<div class="ikon_container3">
+    <img class="ikon3" src="/pics/lightblue_star.svg" alt="">
+</div>
+
+<div class="lyn_container">
+    <img class="lyn" src="/pics/lightning.svg" alt="">
+</div>
+
+<style>
+    .ikon_container {
+position: absolute;
+width: 6%;
+height: 6%;/* 5 sekunder rotation, lineær bevægelse, uendelig gentagelse */
+}
+.ikon {
+    position: relative;
+    animation: rotate 10s linear infinite;
+    transform-origin: center; 
+    width: 100%;
+    height: 100%;
+}
+.ikon_container1 {
+position: absolute;
+width: 2%;
+height: 6%;/* 5 sekunder rotation, lineær bevægelse, uendelig gentagelse */
+}
+.ikon1 {
+    position: relative;
+    animation: rotate 15s linear infinite;
+    transform-origin: center; 
+    width: 100%;
+    height: 100%;
+}
+.ikon_container2 {
+position: absolute;
+width: 10%;
+height: 10%;/* 5 sekunder rotation, lineær bevægelse, uendelig gentagelse */
+}
+.ikon2 {
+    position: relative;
+    animation: rotate 6s linear infinite;
+    transform-origin: center; 
+    width: 100%;
+    height: 100%;
+}
+
+.ikon_container3 {
+position: absolute;
+width: 8%;
+height: 8%;
+}
+.ikon3 {
+    position: relative;
+    animation: rotate 3s linear infinite;
+    transform-origin: center; 
+    width: 100%;
+    height: 100%;
+}
+
+.lyn_container {
+position: absolute;
+width: 8%;
+left: 100px;
+bottom: 100px;
+height: 8%;
+}
+.lyn {
+    position: relative;
+    animation: vend 4s linear infinite;
+    transform-origin: center; 
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes vend {
+    0% {
+        transform: rotate(360deg); 
+    }
+50% {
+        transform: rotate(300deg); 
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg); 
+    }
+}
+
+</style>
+
+<script>
+    const rotatingIcon = document.querySelector('.ikon');
+
+function rotateIcon() {
+    rotatingIcon.style.transform = `rotate(${Date.now() / 10}deg)`; // Ændrer rotationen baseret på tiden
+    requestAnimationFrame(rotateIcon); // Anmoder om næste animationstrin
+}
+
+rotateIcon();
+</script>
