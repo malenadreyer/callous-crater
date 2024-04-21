@@ -7,14 +7,12 @@ header {
     text-align: center;
     color: rgba(16, 17, 13, 1)
 }
-h1, h3 {
+h1, h3, h2 {
     font-family: 'Archivo';
-}
-h2 {
-    color: rgba(39, 57, 170, 1);
 }
 
 h4 {
+    color: rgba(39, 57, 170, 1);
     color: rgba(16, 17, 13, 1);
 }
 h5 {

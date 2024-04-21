@@ -2,6 +2,7 @@
 import Footer from "../components/Footer.astro"
 import Header from "../components/Header.astro"
 import Ikoner from "../components/Ikoner.astro"
+import Video from "../components/Video.astro"
 
 ---
 
@@ -21,14 +22,148 @@ import Ikoner from "../components/Ikoner.astro"
         <header>
                 <h1>GirlTalk</h1>
         </header>
-		
         <main>
             <Header></Header>
+            <div class="tekst1">
+                <p>At finde et fællesskab, hvor du føler dig tryg og accepteret, er en vigtig del af at være ung. I dagens digitale verden er der mange muligheder for at opbygge forbindelser og deltage i fællesskaber både online og offline. Her er nogle tips, der kan hjælpe dig med at opbygge og deltage i et positivt fællesskab.</p>
+            </div>
+            <Video/>
+            <div class="tekst2">
+                <div>
+                        <h2>Her er AI-Ally´s  bedste råd til at indgå i et digitale fællesskab:</h2>
+                </div>
+                <div class="overskrift3">
+                        <h3>Vær autentisk:</h3>
+                </div>
+                <div>
+                        <p>At være ægte og ærlig er nøglen til at opbygge meningsfulde forbindelser. Vær dig selv, både i den digitale verden og i virkeligheden. De rigtige venner vil elske dig for den, du er, med alle dine fejl og mangler.</p>
+                </div>
+                <div class="overskrift3">
+                        <h3>Find din passion:</h3>
+                </div>
+                <div>
+                        <p>Udforsk dine interesser og lidenskaber! Ligegyldigt om det er at tegne, danse, spille et instrument eller noget helt andet, er der altid et fællesskab, der deler dine interesser. Ved at deltage i aktiviteter, der interesserer dig, kan du møde ligesindede og opbygge meningsfulde forbindelser.</p>
+                </div>
+            </div>
+            <div class="tekst3">
+                <div class="grid2">
+                        <div class="overskrift3">
+                        <h3>Del dine historier: </h3>
+                        </div>
+                <div class="teskt4">
+                         <p>At være modig og dele dine oplevelser kan hjælpe med at skabe et mere åbent og støttende fællesskab. Måske har andre oplevet noget lignende, og deling af erfaringer kan bidrage til gensidig støtte og forståelse.</p>
+                </div>
+                <div class="knap">
+                         <p>Link til TikTok <img src="/pics/tiktok.svg" alt=""></p>
+        </div>
+                </div>
+                <div class="video">
+                        <video src="#"></video>
+                </div>
+            </div>
             <Ikoner/>
-                        </main>
+
+        </main>
         <footer>
-<Footer></Footer>
+                <Footer></Footer>
         </footer>
-    <slot></slot>
 	</body>
 </html>
+
+<style>
+.tekst1{
+        padding-top: 50px;
+   color:rgba(16, 17, 13, 1);
+   display: grid;
+   padding-left: 300px;
+   padding-right: 300px;
+   line-height: 2.5;
+   font-size: 1.2rem;
+}
+.tekst2 {
+    display: grid;
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: 2.5; 
+    font-size: 1.2rem;   
+}
+.overskrift3 {
+        color: rgba(252, 77, 92, 1);
+}
+.tekst3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-right: 300px;
+        padding-left: 300px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        line-height: 2.5;
+        font-size: 1.2rem;
+
+}
+.teskt4 {
+        padding-bottom: 20px;
+}
+.knap{
+text-align: center;
+color: rgba(255, 245, 235, 1);
+border-radius: 30px;
+background: var(--farve-v4, #FC4D5C);
+font-weight: 600;
+min-width: 100px; 
+    max-width: 300px;
+
+} 
+@media (max-width: 768px) {
+        .tekst1{
+        padding-top: 50px;
+   color:rgba(16, 17, 13, 1);
+   display: grid;
+   padding-left: 50px;
+   padding-right: 50px;
+   line-height: 2.5;
+   font-size: 1rem;
+}
+.tekst2 {
+    display: grid;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 2.5; 
+    font-size: 1rem;   
+}
+.overskrift3 {
+        color: rgba(252, 77, 92, 1);
+}
+.tekst3{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        line-height: 2.5;
+        font-size: 1rem;
+}   
+.grid2 {
+        grid-row: 2;
+} 
+.teskt4 {
+        padding-bottom: 50px;
+}
+.knap{
+display: grid;
+align-items: center;
+gap: 20px;
+text-align: center;
+color: rgba(255, 245, 235, 1);
+border-radius: 30px;
+background: var(--farve-v4, #FC4D5C);
+font-weight: 600;
+min-width: 100px; 
+    max-width: 300px;
+margin: 0 auto;
+} 
+}
+
+</style>
