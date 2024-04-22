@@ -11,16 +11,14 @@ h1, h3, h2 {
     font-family: 'Archivo';
 }
 
-h4 {
-    color: rgba(39, 57, 170, 1);
-    color: rgba(16, 17, 13, 1);
+:roat {
+    color: rgba(39, 57, 170, 1); /*Primære farver/ brandfarver*/
+    color: rgba(252, 77, 92, 1); /*Primære farver/ brandfarver */
+    color: rgba(16, 17, 13, 1); /* Sekondære farver/ Accent farver */
+    color: rgba(255, 245, 235, 1); /*Sekundære farver/ Accent farver*/
+    color: rgba(209, 236, 239, 1);/*Sekundære farver/ Accent farver*/
 }
-h5 {
-    color: rgba(252, 77, 92, 1);
-    color: rgba(255, 245, 235, 1);
-    color: rgba(209, 236, 239, 1);
-    color:rgba(16, 17, 13, 1); 
-}
+
 p {
-    font-family: 'Archivo';
+    font-family: 'Archivo'; /*Primære font*/
 }

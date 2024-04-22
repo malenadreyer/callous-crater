@@ -22,7 +22,7 @@
     .ikon_container {
 position: absolute;
 width: 6%;
-height: 6%;/* 5 sekunder rotation, lineær bevægelse, uendelig gentagelse */
+height: 6%;
 }
 .ikon {
     position: relative;
@@ -34,7 +34,7 @@ height: 6%;/* 5 sekunder rotation, lineær bevægelse, uendelig gentagelse */
 .ikon_container1 {
 position: absolute;
 width: 2%;
-height: 6%;/* 5 sekunder rotation, lineær bevægelse, uendelig gentagelse */
+height: 6%;
 }
 .ikon1 {
     position: relative;
@@ -106,14 +106,3 @@ height: 8%;
 }
 
 </style>
-
-<script>
-    const rotatingIcon = document.querySelector('.ikon');
-
-function rotateIcon() {
-    rotatingIcon.style.transform = `rotate(${Date.now() / 10}deg)`; // Ændrer rotationen baseret på tiden
-    requestAnimationFrame(rotateIcon); // Anmoder om næste animationstrin
-}
-
-rotateIcon();
-</script>
