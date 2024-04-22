@@ -19,13 +19,10 @@
 </div>
 
 <style>
-    @media (min-width: 768px) {
-        .ikon_container {
+    .ikon_container {
 position: absolute;
 width: 6%;
-height: 6%;
-left: 8%;
-top: 170%;
+height: 6%;/* 5 sekunder rotation, lineær bevægelse, uendelig gentagelse */
 }
 .ikon {
     position: relative;
@@ -37,7 +34,6 @@ top: 170%;
 .ikon_container1 {
 position: absolute;
 width: 2%;
-
 height: 6%;/* 5 sekunder rotation, lineær bevægelse, uendelig gentagelse */
 }
 .ikon1 {
@@ -46,114 +42,15 @@ height: 6%;/* 5 sekunder rotation, lineær bevægelse, uendelig gentagelse */
     transform-origin: center; 
     width: 100%;
     height: 100%;
-    bottom: 2100%;
-    left: 4200%;
 }
 .ikon_container2 {
 position: absolute;
 width: 10%;
-height: 10%;
-top:282%;
-left:83%;
+height: 10%;/* 5 sekunder rotation, lineær bevægelse, uendelig gentagelse */
 }
 .ikon2 {
     position: relative;
-    animation: vend 6s linear infinite;
-    transform-origin: center; 
-    width: 100%;
-    height: 100%;
-   
-}
-
-.ikon_container3 {
-position: absolute;
-width: 8%;
-height: 8%;
-top: 235%;
-}
-.ikon3 {
-    position: static;
     animation: rotate 6s linear infinite;
-    transform-origin: center; 
-    width: 100%;
-    height: 100%;
-    
-}
-
-.lyn_container {
-position: absolute;
-width: 8%;
-left: 82%;
-top: 136%;
-height: 8%;
-}
-.lyn {
-    position: static;
-    animation: vend 4s linear infinite;
-    transform-origin: center; 
-    width: 100%;
-    height: 100%;
-}
-
-@keyframes vend {
-    0% {
-        transform: rotate(360deg); 
-    }
-50% {
-        transform: rotate(300deg); 
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg); 
-    }
-    to {
-        transform: rotate(360deg); 
-    }
-}
-    }
-    @media (max-width: 768px) {
-        .ikon_container {
-position: absolute;
-width: 6%;
-height: 6%;
-left: 4%;
-top: 93%;
-}
-.ikon {
-    position: static;
-    animation: rotate 10s linear infinite;
-    transform-origin: center; 
-    width: 100%;
-    height: 100%;
-}
-.ikon_container1 {
-position: absolute;
-width: 6%;
-height: 6%;
-top: 274%;
-}
-.ikon1 {
-    position: static;
-    animation: rotate 15s linear infinite;
-    transform-origin: center; 
-    width: 100%;
-    height: 100%;
-}
-.ikon_container2 {
-position: absolute;
-width: 10%;
-height: 10%;
-top: 208%;
-left: 73%;
-}
-.ikon2 {
-    position: static;
-    animation: vend 6s linear infinite;
     transform-origin: center; 
     width: 100%;
     height: 100%;
@@ -163,11 +60,10 @@ left: 73%;
 position: absolute;
 width: 8%;
 height: 8%;
-top:155%;
 }
 .ikon3 {
-    position: static;
-    animation: rotate 6s linear infinite;
+    position: relative;
+    animation: rotate 3s linear infinite;
     transform-origin: center; 
     width: 100%;
     height: 100%;
@@ -177,13 +73,11 @@ top:155%;
 position: absolute;
 width: 8%;
 left: 100px;
-top: 377%;
-left:84%;
+bottom: 100px;
 height: 8%;
-
 }
 .lyn {
-    position: static;
+    position: relative;
     animation: vend 4s linear infinite;
     transform-origin: center; 
     width: 100%;
@@ -210,7 +104,7 @@ height: 8%;
         transform: rotate(360deg); 
     }
 }
-    }
+
 </style>
 
 <script>
