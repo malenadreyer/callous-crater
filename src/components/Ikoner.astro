@@ -23,6 +23,7 @@
 position: absolute;
 width: 6%;
 height: 6%;
+top: 127%;
 }
 .ikon {
     position: relative;
@@ -35,6 +36,8 @@ height: 6%;
 position: absolute;
 width: 2%;
 height: 6%;
+top: 100%;
+left: 88%;
 }
 .ikon1 {
     position: relative;
@@ -46,7 +49,9 @@ height: 6%;
 .ikon_container2 {
 position: absolute;
 width: 10%;
-height: 10%;/* 5 sekunder rotation, lineær bevægelse, uendelig gentagelse */
+height: 10%;
+top: 172%;
+left: 74%;
 }
 .ikon2 {
     position: relative;
@@ -60,6 +65,7 @@ height: 10%;/* 5 sekunder rotation, lineær bevægelse, uendelig gentagelse */
 position: absolute;
 width: 8%;
 height: 8%;
+top: 216%;
 }
 .ikon3 {
     position: relative;
@@ -72,8 +78,8 @@ height: 8%;
 .lyn_container {
 position: absolute;
 width: 8%;
-left: 100px;
-bottom: 100px;
+left: 90%;
+top: 255%;
 height: 8%;
 }
 .lyn {
@@ -83,7 +89,78 @@ height: 8%;
     width: 100%;
     height: 100%;
 }
+@media (max-width: 768px) {
+    .ikon_container {
+position: absolute;
+width: 6%;
+height: 6%;
+top: 107%;
+}
+.ikon {
+    position: relative;
+    animation: rotate 10s linear infinite;
+    transform-origin: center; 
+    width: 100%;
+    height: 100%;
+}
+.ikon_container1 {
+position: absolute;
+width: 6%;
+height: 6%;
+top: 100%;
+left: 88%;
+}
+.ikon1 {
+    position: relative;
+    animation: rotate 15s linear infinite;
+    transform-origin: center; 
+    width: 100%;
+    height: 100%;
+}
+.ikon_container2 {
+position: absolute;
+width: 10%;
+height: 10%;
+top: 196%;
+left: 80%;
+}
+.ikon2 {
+    position: relative;
+    animation: rotate 6s linear infinite;
+    transform-origin: center; 
+    width: 100%;
+    height: 100%;
+}
 
+.ikon_container3 {
+position: absolute;
+width: 8%;
+height: 8%;
+top: 266%;
+}
+.ikon3 {
+    position: relative;
+    animation: rotate 3s linear infinite;
+    transform-origin: center; 
+    width: 100%;
+    height: 100%;
+}
+
+.lyn_container {
+position: absolute;
+width: 8%;
+left: 85%;
+top: 306%;
+height: 8%;
+}
+.lyn {
+    position: relative;
+    animation: vend 4s linear infinite;
+    transform-origin: center; 
+    width: 100%;
+    height: 100%;
+}
+}
 @keyframes vend {
     0% {
         transform: rotate(360deg); 
@@ -104,5 +181,6 @@ height: 8%;
         transform: rotate(360deg); 
     }
 }
+
 
 </style>
