@@ -13,6 +13,7 @@ import Video from "../components/Video.astro"
 		<meta name="viewport" content="width=device-width" />
                 <meta name="Webfetaure" content="GirlTalk">
         <link rel="stylesheet" href="/src/layouts/layout.css">
+      
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -58,10 +59,14 @@ import Video from "../components/Video.astro"
                          <p>Link til TikTok <img src="/pics/tiktok.svg" alt=""></p>
         </div>
                 </div>
+           <div class="tester">
+                <div class="video1">
                 <div class="video">
-                        <video src="#"></video>
+                        <a href="https://www.tiktok.com/@girltalkdk/video/7305127592837795104?_r=1&_t=8llfM2eVjH6"><img class="video4" src="/pics/video.svg" alt="Link til Tikotk"></a>
                 </div>
-            </div>
+                        <span class="underlay"></span>
+                </div> 
+        </div>
             <Ikoner/>
 
         </main>
@@ -72,6 +77,39 @@ import Video from "../components/Video.astro"
 </html>
 
 <style>
+.tester {
+        position: relative;
+        flex: 0 0 auto;
+    width: 100%;
+    justify-self: center;
+    padding: 20px;
+}
+.video4 {
+        display: block;
+        background-color: rgba(255, 245, 235, 1);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+.video1 {
+        position: relative;
+    width: calc(100% - 15px);
+}
+.underlay {
+        background: rgba(255, 245, 235, 1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    border-radius: 5px;
+    z-index: 0;
+}
+.video {
+        position: relative;
+    z-index: 1;
+
+}
 .tekst1{
         padding-top: 50px;
    color:rgba(16, 17, 13, 1);
